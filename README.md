@@ -47,10 +47,6 @@
    python run.py
    ```
 
-5. **Otwórz aplikację w przeglądarce:**
-
-   [http://localhost:5000](http://localhost:5000)
-
 ## 📁 Struktura katalogów
 
 ```
