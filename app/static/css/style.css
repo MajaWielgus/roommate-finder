@@ -1,0 +1,38 @@
+/* Zmiana czcionki dla całego formularza */
+form {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Zmiana czcionki dla etykiet */
+form label {
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+/* Zmiana czcionki w polach formularza */
+form input, form select, form textarea {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja przycisku */
+form button {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 16px;
+    background-color: #ca72c0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

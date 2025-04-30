@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyszukiwarka Pokoi</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <style>
+        #map { height: 400px; width: 100%; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Wyszukiwarka pokoi na wynajem: trójmiasto</h1>
+    <form method="POST">
+        <label for="location">Miasto:</label>
+        <select name="location" id="location">
+            <option value="">-- wybierz --</option>
+            {% for city in city_coordinates.keys() %}
+                <option value="{{ city }}" {% if selected_city == city %}selected{% endif %}>{{ city }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label><input type="checkbox" name="balcony" {% if request.form.get('balcony') %}checked{% endif %}> Balkon</label><br>
+        <label><input type="checkbox" name="smoking" {% if request.form.get('smoking') %}checked{% endif %}> Palenie dozwolone</label><br>
+        <label><input type="checkbox" name="pets" {% if request.form.get('pets') %}checked{% endif %}> Zwierzęta dozwolone</label><br>
+        <button type="submit">Szukaj</button>
+    </form>
+
+    <ul>
+        {% for offer in offers %}
+            <li>{{ offer.location }} | Cena: {{ offer.price }} PLN</li>
+            {% if offer.balcony %}| Balkon {% endif %}
+            {% if offer.smoking %}| Palenie dozwolone {% endif %}
+            {% if offer.pets %}| Zwierzęta dozwolone {% endif %}
+        {% endfor %}
+    </ul>
+
+    <!-- Mapa z przekazanymi danymi miast -->
+    <div id="map" 
+        data-city-coordinates='{{ city_coordinates | tojson | safe }}'
+        data-selected-city='{{ selected_city | tojson | default("null") | safe }}'>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='map.js') }}"></script>
+</body>
+</html>
