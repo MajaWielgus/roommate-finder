@@ -51,14 +51,14 @@
 
 ```
 roommate-finder/
-├── app/              # Główna logika aplikacji (np. trasy Flask, modele)
+├── app/              # Główna logika aplikacji 
 ├── instance/         # Konfiguracja i baza danych SQLite
-├── migrations/       # Migracje bazy danych (jeśli używacie Alembic)
+├── migrations/       # Migracje bazy danych 
 ├── templates/        # Szablony HTML
 ├── static/           # Pliki CSS, JS, Leaflet
 ├── run.py            # Główny plik uruchamiający aplikację
 ├── requirements.txt  # Lista zależności
-├── README.md         # Dokumentacja (ten plik)
+├── README.md         # Dokumentacja 
 ```
 
 ## 🗺️ Leaflet
