@@ -7,7 +7,6 @@
 
 - 🗺️ Wyświetlanie ofert mieszkaniowych na interaktywnej mapie dzięki Leaflet
 - 🔍 Filtrowanie według lokalizacji i podstawowych preferencji
-- 📝 Dodawanie i edycja ofert mieszkaniowych 
 - 💾 Przechowywanie danych w bazie SQLite
 
 ## 🛠️ Technologie
