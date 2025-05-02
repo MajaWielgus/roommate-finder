@@ -1,16 +1,16 @@
 
-# 🏡 Room Finder – Dokumentacja Projektu
+# 🏡 Roommate Finder – Dokumentacja Projektu
 
 ## 1. Charakterystyka oprogramowania
 
 ### a. Nazwa skrócona
-**RoomFinder**
+**RoommateFinder**
 
 ### b. Nazwa pełna
-**Room Finder – Aplikacja do przeglądania ofert pokojów na wynajem**
+**Roommate Finder – Aplikacja do przeglądania ofert pokojów na wynajem**
 
 ### c. Opis i cele projektu
-Room Finder to lekka aplikacja internetowa, która umożliwia użytkownikom przeglądanie ofert pokojów na wynajem w Trójmieście (Gdańsk, Sopot, Gdynia). Projekt skupia się na prostocie i użyteczności — użytkownik wybiera lokalizację i preferencje, a aplikacja prezentuje odpowiednie ogłoszenia.
+Roommate Finder to lekka aplikacja internetowa, która umożliwia użytkownikom przeglądanie ofert pokojów na wynajem w Trójmieście (Gdańsk, Sopot, Gdynia). Projekt skupia się na prostocie i użyteczności — użytkownik wybiera lokalizację i preferencje, a aplikacja prezentuje odpowiednie ogłoszenia.
 
 **Główne cele aplikacji:**
 - Ułatwienie przeglądania ofert pokojów z podziałem na miasta Trójmiasta
