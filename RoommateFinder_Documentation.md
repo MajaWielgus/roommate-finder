@@ -36,15 +36,20 @@ Pełne treści licencji znajdują się w pliku LICENSE.
 
 ---
 
-## 3. Specyfikacja wymagań
+### 3. Scenariusze testowe
 
-| ID  | Nazwa                   | Opis                                                   | Priorytet | Kategoria       |
-|-----|--------------------------|----------------------------------------------------------|-----------|------------------|
-| R1  | Przegląd ogłoszeń        | Wyświetlanie listy pokojów dostępnych w bazie           | 1         | funkcjonalne     |
-| R2  | Filtrowanie ogłoszeń     | Filtrowanie po lokalizacji i preferencjach              | 1         | funkcjonalne     |
-| R3  | Mapa lokalizacji         | Pokazanie ogólnej lokalizacji miasta na mapie           | 2         | funkcjonalne     |
-| R4  | Responsywny interfejs    | Obsługa na urządzeniach mobilnych                       | 2         | pozafunkcjonalne |
-| R5  | Przechowywanie danych    | Przechowywanie danych w bazie SQLite                    | 1         | funkcjonalne     |
+Poniższa tabela przedstawia główne scenariusze testowe oparte na **user stories**, zidentyfikowane na podstawie wymagań funkcjonalnych aplikacji. Szczegółowe przypadki testowe wraz ze screenami znajdują się w punkcie [6. Przypadki testowe](#6-przypadki-testowe).
+
+| Nr | Nazwa testu              | Opis                                                             | Odniesienie                      |
+|----|---------------------------|------------------------------------------------------------------|----------------------------------|
+| 1  | Wybór lokalizacji         | Użytkownik wybiera miasto, aby zobaczyć dostępne pokoje         | [6.1](#1-wybór-lokalizacji)      |
+| 2  | Filtrowanie ofert         | Użytkownik filtruje pokoje według preferencji                   | [6.2](#2-filtrowanie-ofert)      |
+| 3  | Wyświetlanie wyników      | Użytkownik przegląda oferty wraz z opisem i ceną                | [6.3](#3-wyświetlenie-wyników)   |
+| 4  | Mapa z miastem            | Użytkownik widzi mapę z lokalizacją wybranego miasta            | [6.4](#4-mapa-z-miastem)         |
+| 5  | Domyślna mapa Trójmiasta  | Aplikacja pokazuje ogólną mapę Trójmiasta po załadowaniu strony | [6.5](#5-domyślna-mapa-trójmiasta) |
+| 6  | Brak lokalizacji          | Bez wyboru lokalizacji użytkownik widzi wszystkie oferty        | [6.6](#6-brak-wybranej-lokalizacji) |
+
+> ℹ️ **Notatka**: Scenariusze testowe oparto na uproszczonych _user stories_, które odzwierciedlają podstawowe potrzeby użytkowników końcowych.
 
 ---
 
