@@ -32,7 +32,7 @@ Projekt objęty jest licencją **MIT**.
 **Zewnętrzne komponenty:**
 - [Leaflet.js](https://leafletjs.com) – open-source biblioteka mapowa (licencja BSD 2-Clause License)
 
-Pełne treści licencji znajdują się w katalogu `licenses/`.
+Pełne treści licencji znajdują się w pliku LICENSE.
 
 ---
 
@@ -87,26 +87,32 @@ Pełne treści licencji znajdują się w katalogu `licenses/`.
 - **Cel:** Zobaczyć dostępne pokoje w wybranym mieście.
 - **Komentarz:** Lista rozwijana z Gdańsk/Sopot/Gdynia działa poprawnie.
 
+![Wybór lokalizacji](screenshots/wybor_lokalizacji_1.png)
+![Wybór lokalizacji](screenshots/wybor_lokalizacji_2.png)
+![Wybór lokalizacji](screenshots/wybor_lokalizacji_3.png)
+![Wybór lokalizacji](screenshots/wybor_lokalizacji_4.png)
+
 ### 2. Filtrowanie ofert
 - **Cel:** Znaleźć pokoje z wybranymi preferencjami (balkon, palenie, zwierzęta).
 - **Komentarz:** Checkboxy działają poprawnie.
+- ![Wybór lokalizacji](screenshots/filtrowanie_ofert.png)
 
 ### 3. Wyświetlenie wyników
 - **Cel:** Zobaczyć listę pokoi z opisem i ceną.
 - **Komentarz:** Lista działa poprawnie, pokazuje podstawowe dane.
-
+![Wybór lokalizacji](screenshots/wyswietlanie_wynikow.png)
 ### 4. Mapa z miastem
 - **Cel:** Zobaczyć mapę z ogólną lokalizacją wybranego miasta.
 - **Komentarz:** Mapa centruje się poprawnie.
-
+![Wybór lokalizacji](screenshots/mapa_z_obszarem_miasta.png)
 ### 5. Domyślna mapa Trójmiasta
 - **Cel:** Po wejściu na stronę zobaczyć domyślny widok całego Trójmiasta.
 - **Komentarz:** Działa poprawnie.
-
+![Wybór lokalizacji](screenshots/domyslna_mapa.png)
 ### 6. Brak wybranej lokalizacji
 - **Cel:** Zobaczyć wszystkie pokoje w bazie.
 - **Komentarz:** Wszystkie oferty się wyświetlają.
-
+![Wybór lokalizacji](screenshots/lista_wszystkich_ofert.png)
 ---
 
 ## 7. Dodatki
