@@ -4,7 +4,7 @@
 ## 1. Charakterystyka oprogramowania
 
 ### a. Nazwa skrócona
-**RoommateFinder**
+**Roommate Finder**
 
 ### b. Nazwa pełna
 **Roommate Finder – Aplikacja do przeglądania ofert pokojów na wynajem**
