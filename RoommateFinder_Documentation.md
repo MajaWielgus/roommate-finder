@@ -30,7 +30,8 @@ Roommate Finder to lekka aplikacja internetowa, która umożliwia użytkownikom 
 Projekt objęty jest licencją **MIT**.
 
 **Zewnętrzne komponenty:**
-- [Leaflet.js](https://leafletjs.com) – open-source biblioteka mapowa (licencja BSD 2-Clause License)
+- Leaflet.js – open-source biblioteka mapowa (licencja **BSD 2-Clause License**)
+- Dane mapowe pochodzą z **OpenStreetMap** (licencja **ODbL**)
 
 Pełne treści licencji znajdują się w pliku LICENSE.
 
