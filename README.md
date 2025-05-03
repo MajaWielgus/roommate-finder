@@ -4,7 +4,7 @@ Roommate Finder to prosta aplikacja webowa umożliwiająca przeglądanie ofert p
 
 ## ✨ Funkcje
 
-- 🗺️ Interaktywna mapa (Leaflet.js) z zaznaczonym ogólnym obszarem miasta
+- 🗺️ Interaktywna mapa z zaznaczonym ogólnym obszarem miasta (Leaflet.js + OpenStreetMap)
 - 🔍 Filtrowanie ofert według lokalizacji i preferencji (balkon, palenie, zwierzęta)
 - 🧩 Przechowywanie danych w lokalnej bazie SQLite
 - 📱 Responsywny interfejs dostępny w przeglądarce
@@ -15,7 +15,7 @@ Roommate Finder to prosta aplikacja webowa umożliwiająca przeglądanie ofert p
 - Flask (backend + routing)
 - SQLite (baza danych)
 - HTML + CSS + Jinja2 (szablony)
-- JavaScript + Leaflet.js (interaktywne mapy)
+- JavaScript + Leaflet.js (interaktywne mapy z danymi z OpenStreetMap)
 
 ## 🚀 Jak uruchomić projekt lokalnie
 
