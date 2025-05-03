@@ -73,6 +73,7 @@ Projekt korzysta z biblioteki [Leaflet.js](https://leafletjs.com), która umożl
 Projekt objęty jest licencją **MIT**. Szczegóły znajdują się w pliku `LICENSE`.  
 
 Aplikacja używa również:
+
 -Leaflet.js – licencja BSD 2-Clause (autor: Volodymyr Agafonkin)
 
 -OpenStreetMap – dane mapowe na licencji ODbL 1.0
