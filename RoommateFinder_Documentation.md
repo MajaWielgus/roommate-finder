@@ -85,9 +85,10 @@ Poniższa tabela przedstawia główne scenariusze testowe oparte na **user stori
 
 ### 1. Wybór lokalizacji
 - **Cel:** Filtracja pokoi według miasta.
+
 - **Kroki:**
-    1. Wybierz miasto z listy.  
-    2. Kliknij „Szukaj”.  
+1. Wybierz miasto z listy.  
+2. Kliknij „Szukaj”.  
 - **Oczekiwany wynik:**  
 Lista zawiera tylko pokoje z wybranego miasta.
 
@@ -98,6 +99,7 @@ Lista zawiera tylko pokoje z wybranego miasta.
 
 ### 2. Filtrowanie ofert
 - **Cel:** Ograniczenie wyników wyszukiwania zgodnie z zaznaczonymi filtrami. 
+
 - **Kroki:**  
 1. Zaznacz wybrane preferencje (np. balkon, palenie, zwierzęta).  
 2. Kliknij „Szukaj”.  
@@ -109,6 +111,7 @@ Lista zawiera tylko pokoje spełniające wybrane preferencje.
 
 ### 3. Wyświetlenie wyników
 - **Cel:** Prezentacja wszystkich kluczowych informacji o pokojach.
+
 - **Kroki:**  
 1. Wyszukaj pokoje (dowolne kryteria).  
 2. Przejrzyj wyświetloną listę ofert.  
@@ -119,6 +122,7 @@ Każda oferta zawiera opis, cenę i podstawowe cechy pokoju.
 
 ### 4. Mapa z miastem
 - **Cel:** Wizualizacja wybranego miasta na mapie.  
+
 - **Kroki:**  
 1. Wybierz miasto z listy.  
 2. Kliknij „Szukaj”.  
@@ -130,6 +134,7 @@ Mapa centruje się na wybranym mieście i wyświetla jego obszar.
 
 ### 5. Domyślna mapa Trójmiasta
 - **Cel:** Prezentacja domyślnego widoku mapy dla całego obszaru Trójmiasta.  
+
 - **Kroki:**  
 1. Otwórz stronę główną aplikacji.  
 - **Oczekiwany wynik:**  
@@ -139,6 +144,7 @@ Wyświetla się mapa obejmująca cały obszar Trójmiasta.
 
 ### 6. Brak wybranej lokalizacji
 - **Cel:** Wyświetlenie wszystkich ofert przy braku wybranego miasta.  
+
 - **Kroki:**  
 1. Nie wybieraj miasta z listy.  
 2. Kliknij „Szukaj”.  
@@ -167,10 +173,12 @@ Przetestowano wszystkie kluczowe funkcjonalności opisane w przypadkach testowyc
 | T6     | Test bez wyboru lokalizacji  | ✅ ZALICZONY      | Bez wyboru lokalizacji wyświetlane są wszystkie oferty z bazy.                      | Brak uwag. 	
 
 
+
 **Podsumowanie wyników:**  
 - Łącznie przetestowano 6 przypadków testowych.
 - Wszystkie przypadki zakończyły się wynikiem pozytywnym.
 - Nie wykryto błędów ani defektów podczas testów manualnych.
+
 
 **Brak testów automatycznych.**
 
