@@ -86,8 +86,8 @@ Poniższa tabela przedstawia główne scenariusze testowe oparte na **user stori
 ### 1. Wybór lokalizacji
 - **Cel:** Filtracja pokoi według miasta.
 - **Kroki:**
-  1. Wybierz miasto z listy.  
-  2. Kliknij „Szukaj”.  
+    1. Wybierz miasto z listy.  
+    2. Kliknij „Szukaj”.  
 - **Oczekiwany wynik:**  
 Lista zawiera tylko pokoje z wybranego miasta.
 
