@@ -43,12 +43,12 @@ Poniższa tabela przedstawia główne scenariusze testowe oparte na **user stori
 
 | Nr | Nazwa testu              | Opis                                                             | Odniesienie                      |
 |----|---------------------------|------------------------------------------------------------------|----------------------------------|
-| 1  | Wybór lokalizacji         | Użytkownik wybiera miasto, aby zobaczyć dostępne pokoje         | [6.1](#1-wybór-lokalizacji)      |
-| 2  | Filtrowanie ofert         | Użytkownik filtruje pokoje według preferencji                   | [6.2](#2-filtrowanie-ofert)      |
-| 3  | Wyświetlanie wyników      | Użytkownik przegląda oferty wraz z opisem i ceną                | [6.3](#3-wyświetlenie-wyników)   |
-| 4  | Mapa z miastem            | Użytkownik widzi mapę z lokalizacją wybranego miasta            | [6.4](#4-mapa-z-miastem)         |
-| 5  | Domyślna mapa Trójmiasta  | Aplikacja pokazuje ogólną mapę Trójmiasta po załadowaniu strony | [6.5](#5-domyślna-mapa-trójmiasta) |
-| 6  | Brak lokalizacji          | Bez wyboru lokalizacji użytkownik widzi wszystkie oferty        | [6.6](#6-brak-wybranej-lokalizacji) |
+| 1  | Wybór lokalizacji         | Użytkownik wybiera miasto, aby zobaczyć dostępne pokoje         | [5.1](#1-wybór-lokalizacji)      |
+| 2  | Filtrowanie ofert         | Użytkownik filtruje pokoje według preferencji                   | [5.2](#2-filtrowanie-ofert)      |
+| 3  | Wyświetlanie wyników      | Użytkownik przegląda oferty wraz z opisem i ceną                | [5.3](#3-wyświetlenie-wyników)   |
+| 4  | Mapa z miastem            | Użytkownik widzi mapę z lokalizacją wybranego miasta            | [5.4](#4-mapa-z-miastem)         |
+| 5  | Domyślna mapa Trójmiasta  | Aplikacja pokazuje ogólną mapę Trójmiasta po załadowaniu strony | [5.5](#5-domyślna-mapa-trójmiasta) |
+| 6  | Brak lokalizacji          | Bez wyboru lokalizacji użytkownik widzi wszystkie oferty        | [5.6](#6-brak-wybranej-lokalizacji) |
 
 > ℹ️ **Notatka**: Scenariusze testowe oparto na uproszczonych _user stories_, które odzwierciedlają podstawowe potrzeby użytkowników końcowych.
 
@@ -81,17 +81,15 @@ Poniższa tabela przedstawia główne scenariusze testowe oparte na **user stori
 
 ## 5. Testy
 
-### a. Sprawozdanie z testów
-- Przeprowadzono testy manualne na etapie rozwoju aplikacji.
-- Brak testów automatycznych.
-
----
-
-## 6. Przypadki testowe
+### a. Przypadki testowe
 
 ### 1. Wybór lokalizacji
-- **Cel:** Zobaczyć dostępne pokoje w wybranym mieście.
-- **Komentarz:** Lista rozwijana z Gdańsk/Sopot/Gdynia działa poprawnie.
+- **Cel:** Filtracja pokoi według miasta.
+- **Kroki:**  
+1. Wybierz miasto z listy.  
+2. Kliknij „Szukaj”.  
+- **Oczekiwany wynik:**  
+Lista zawiera tylko pokoje z wybranego miasta.
 
 ![Wybór lokalizacji](screenshots/wybor_lokalizacji_1.png)
 ![Wybór lokalizacji](screenshots/wybor_lokalizacji_2.png)
@@ -99,26 +97,83 @@ Poniższa tabela przedstawia główne scenariusze testowe oparte na **user stori
 ![Wybór lokalizacji](screenshots/wybor_lokalizacji_4.png)
 
 ### 2. Filtrowanie ofert
-- **Cel:** Znaleźć pokoje z wybranymi preferencjami (balkon, palenie, zwierzęta).
-- **Komentarz:** Checkboxy działają poprawnie.
+- **Cel:** Ograniczenie wyników wyszukiwania zgodnie z zaznaczonymi filtrami. 
+- **Kroki:**  
+1. Zaznacz wybrane preferencje (np. balkon, palenie, zwierzęta).  
+2. Kliknij „Szukaj”.  
+
+-**Oczekiwany wynik:**  
+Lista zawiera tylko pokoje spełniające wybrane preferencje.
+
 - ![Wybór lokalizacji](screenshots/filtrowanie_ofert.png)
 
 ### 3. Wyświetlenie wyników
-- **Cel:** Zobaczyć listę pokoi z opisem i ceną.
-- **Komentarz:** Lista działa poprawnie, pokazuje podstawowe dane.
+- **Cel:** Prezentacja wszystkich kluczowych informacji o pokojach.
+- **Kroki:**  
+1. Wyszukaj pokoje (dowolne kryteria).  
+2. Przejrzyj wyświetloną listę ofert.  
+- **Oczekiwany wynik:**  
+Każda oferta zawiera opis, cenę i podstawowe cechy pokoju.
+
 ![Wybór lokalizacji](screenshots/wyswietlanie_wynikow.png)
+
 ### 4. Mapa z miastem
-- **Cel:** Zobaczyć mapę z ogólną lokalizacją wybranego miasta.
-- **Komentarz:** Mapa centruje się poprawnie.
+- **Cel:** Wizualizacja wybranego miasta na mapie.  
+- **Kroki:**  
+1. Wybierz miasto z listy.  
+2. Kliknij „Szukaj”.  
+3. Sprawdź mapę.  
+- **Oczekiwany wynik:**  
+Mapa centruje się na wybranym mieście i wyświetla jego obszar.
+
 ![Wybór lokalizacji](screenshots/mapa_z_obszarem_miasta.png)
+
 ### 5. Domyślna mapa Trójmiasta
-- **Cel:** Po wejściu na stronę zobaczyć domyślny widok całego Trójmiasta.
-- **Komentarz:** Działa poprawnie.
+- **Cel:** Prezentacja domyślnego widoku mapy dla całego obszaru Trójmiasta.  
+- **Kroki:**  
+1. Otwórz stronę główną aplikacji.  
+- **Oczekiwany wynik:**  
+Wyświetla się mapa obejmująca cały obszar Trójmiasta.
+
 ![Wybór lokalizacji](screenshots/domyslna_mapa.png)
+
 ### 6. Brak wybranej lokalizacji
-- **Cel:** Zobaczyć wszystkie pokoje w bazie.
-- **Komentarz:** Wszystkie oferty się wyświetlają.
+- **Cel:** Wyświetlenie wszystkich ofert przy braku wybranego miasta.  
+- **Kroki:**  
+1. Nie wybieraj miasta z listy.  
+2. Kliknij „Szukaj”.  
+- **Oczekiwany wynik:**  
+Lista zawiera wszystkie dostępne pokoje z bazy danych.
+
 ![Wybór lokalizacji](screenshots/lista_wszystkich_ofert.png)
+
+### b. Sprawozdanie z wykonywanych testów
+
+**Podsumowanie:**  
+Testy manualne zostały przeprowadzone na działającej wersji aplikacji Roommate Finder w środowisku deweloperskim
+
+**Zakres testów:**  
+Przetestowano wszystkie kluczowe funkcjonalności opisane w przypadkach testowych: wybór lokalizacji, filtrowanie ofert, wyświetlanie wyników, mapa z miastem, domyślna mapa Trójmiasta, brak wybranej lokalizacji.
+
+**Wyniki testów:**
+
+| **ID** | **Nazwa testu**             | **Status**       | **Opis wykonania**                                                                 | **Błędy / Uwagi**                                  |
+|--------|------------------------------|------------------|-------------------------------------------------------------------------------------|----------------------------------------------------|
+| T1     | Test wyboru lokalizacji      | ✅ ZALICZONY      | Lista rozwijana z miastami działa poprawnie. Wyniki wyświetlają się zgodnie z wyborem. | Brak uwag.                                         |
+| T2     | Test filtrowania ofert       | ✅ ZALICZONY      | Checkboxy działają prawidłowo. Wyniki są filtrowane zgodnie z zaznaczonymi preferencjami. | Brak uwag.                                         |
+| T3     | Test wyświetlania wyników    | ✅ ZALICZONY      | Lista ofert jest czytelna, zawiera nazwę, cenę i krótki opis pokoju.                 | Można rozważyć dodanie zdjęć do oferty.            |
+| T4     | Test mapy miasta             | ✅ ZALICZONY      | Po wyborze lokalizacji mapa przesuwa się i centruje na wybranym mieście.             | Brak uwag.                                         |
+| T5     | Test domyślnej mapy          | ✅ ZALICZONY      | Po wejściu na stronę mapa pokazuje domyślnie całe Trójmiasto.                        | Brak uwag.                                         |
+| T6     | Test bez wyboru lokalizacji  | ✅ ZALICZONY      | Bez wyboru lokalizacji wyświetlane są wszystkie oferty z bazy.                      | Brak uwag. 	
+
+
+**Podsumowanie wyników:**  
+- Łącznie przetestowano 6 przypadków testowych.
+- Wszystkie przypadki zakończyły się wynikiem pozytywnym.
+- Nie wykryto błędów ani defektów podczas testów manualnych.
+
+**Brak testów automatycznych.**
+
 ---
 
 ## 7. Dodatki
